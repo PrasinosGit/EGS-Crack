@@ -1,7 +1,7 @@
 # EGS-Crack
 通过PHP脚本在内网控制全校门禁
 
-视频演示：http://wh0.me/work/menjinxitongkongzhiceshi.html
+视频演示：https://www.youtube.com/edit?o=U&video_id=u7nx2Y80v2I
 
 详情投稿在t00ls论坛（精华）:
 
