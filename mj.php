@@ -1,7 +1,7 @@
 <?php
 header("Content-Type:text/html;charset=utf-8");
 @set_time_limit(6); 
-function udpGet($sendMsg = '', $ip = '172.19.2.4', $port = '9000'){  
+function udpGet($sendMsg = '', $ip = '172.19.20.4', $port = '9000'){  
     $handle = stream_socket_client("udp://{$ip}:{$port}", $errno, $errstr);  
     if( !$handle ){  
         die("ERROR: {$errno} - {$errstr}\n");  
@@ -17,19 +17,19 @@ function udpGet($sendMsg = '', $ip = '172.19.2.4', $port = '9000'){
 if(isset($zt)&&isset($ip)){	
 $start_time=microtime(true); 
 	if($_GET['ip']==1){
-		$ip="172.19.2.2";
+		$ip="172.19.20.2";
 		$jh="\x01";
 	}else if($_GET['ip']==2){
-		$ip="172.19.2.3";
+		$ip="172.19.20.3";
 		$jh="\x02";
 	}else if($_GET['ip']==3){
-		$ip="172.19.2.4";;
+		$ip="172.19.20.4";;
 		$jh="\x03";
 	}else if($_GET['ip']==4){
-		$ip="172.19.2.5";
+		$ip="172.19.20.5";
 		$jh="\x04";;
 	}else if($_GET['ip']==5){
-		$ip="172.19.2.6";
+		$ip="172.19.20.6";
 		$jh="\x05";
 	}else{
 		exit;
